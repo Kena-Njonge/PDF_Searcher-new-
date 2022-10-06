@@ -32,6 +32,8 @@ def textSearch(target_path,word_list,name,return_path):
                 writer.addPage(object.getPage(i))
                 VisitedPage[i] = 1
     #Remove quotation marks from name
+    ###
+    ###
     name = name.replace("'","")
     name = name.replace('"','')
     #differentiation between Return path with or without quotation marks
