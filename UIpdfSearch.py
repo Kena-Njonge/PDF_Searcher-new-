@@ -19,7 +19,10 @@ def main():
 
 #create window
 window = Tk()
- #add window elements and open window
+window.title("Pdf searcher")
+#include icon
+window.iconbitmap()
+#add window elements and open window
 label1=tk.Label (text= "Insert target words seperated by a blank space")
 label2=tk.Label (text= "Insert file path")
 label3=tk.Label (text= "Insert output file name")
@@ -42,4 +45,6 @@ label4.pack()
 entry_box4.pack()
 B = Button(text="OK", command=fetchEntry)
 B.pack()
+B1 = Button(text="Quit", command=window.destroy)
+B1.pack()
 main()
